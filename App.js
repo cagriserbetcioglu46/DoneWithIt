@@ -7,5 +7,7 @@ import Login1 from "./interfaces/loginPage"
 export default function Frame1() {
   
   return <Login1 />
+  
 }
 
+ 
