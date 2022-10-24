@@ -32,7 +32,7 @@ export default function App() {
             <View style={styles.inputView}>
                 <TextInput
                     style={styles.TextInput}
-                    placeholder="Password"
+                    placeholder="Şifre"
                     placeholderTextColor="#003f5c"
                     secureTextEntry={true}
                     onChangeText={(password) => setPassword(password)}
@@ -40,7 +40,7 @@ export default function App() {
             </View>
 
             <TouchableOpacity>
-                <Text style={styles.forgot_button}>Kayıt Ol</Text>
+                <Text style={styles.signUp_button}>Kayıt Ol</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.loginBtn}>
@@ -65,12 +65,21 @@ const styles = StyleSheet.create({
     inputView: {
         backgroundColor: "#fff",
         borderRadius: 15,
-        borderWidth: 1.5,
+        borderWidth: 1.,
         borderColor:"#000",
         width: "70%",
         height: 45,
         marginBottom: 20,
         alignItems: "center",
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+
+        elevation: 24,
     },
 
     TextInput: {
@@ -81,9 +90,11 @@ const styles = StyleSheet.create({
     },
 
 
-    forgot_button: {
+    signUp_button: {
         height: 30,
         marginBottom: 10,
+        fontSize: 16,
+        color: "#a5240b",
     },
 
     loginBtn: {
@@ -92,12 +103,22 @@ const styles = StyleSheet.create({
         height: 50,
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 10,
+        marginTop: 5,
         backgroundColor: "#006400",
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 24,
     },
+
     loginText: {
         color: "#fff",
-      
+        fontWeight: "bold",
+        fontSize: 20,      
     },
 
 });
