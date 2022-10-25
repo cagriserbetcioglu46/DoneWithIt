@@ -14,6 +14,8 @@
     "react": "18.0.0",
     "react-native": "0.69.6",
     "react-native-really-awesome-button": "^2.0.3",
+    "react-native-safe-area-context": "4.3.1",
+    "react-native-screens": "~3.15.0",
     "react-native-spinkit": "^1.5.1",
     "react-native-spinkit-button": "^1.2.1",
     "react-native-vector-icons": "^9.2.0",

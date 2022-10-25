@@ -8,7 +8,7 @@ import MainMenu1 from "./interfaces/mainMenu"
 
 export default function Frame1() {
   
-  return <MainMenu1 />
+  return <SignUp1 />
   
 }
 
