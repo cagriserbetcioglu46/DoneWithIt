@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     },
 
     image: {
-        marginBottom: 10,
+        marginBottom:0,
     },
 
     inputView: {
@@ -116,24 +116,6 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         fontSize: 16,
         color: "#a5240b",
-    },
-
-    kayitBtn: {
-        width: "40%",
-        borderRadius: 15,
-        height: 50,
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: 5,
-        backgroundColor: "#006400",
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 12,
-        },
-        shadowOpacity: 0.58,
-        shadowRadius: 16.00,
-        elevation: 24,
     },
 
     loginText: {
