@@ -20,7 +20,7 @@ export default function App() {
             <Image style={styles.image} source={require("../images/prosetlogo328-128.png")} />
 
             <StatusBar style="auto" />
-            <View style={styles.inputView}>
+            <View style={styles.buttonView}>
                 <TextInput
                     style={styles.TextInput}
                     placeholder="Kullanıcı Adı"
@@ -29,7 +29,7 @@ export default function App() {
                 />
             </View>
 
-            <View style={styles.inputView}>
+            <View style={styles.buttonView}>
                 <TextInput
                     style={styles.TextInput}
                     placeholder="Şifre"
@@ -38,30 +38,12 @@ export default function App() {
                     onChangeText={(password) => setPassword(password)}
                 />
             </View>
-            <View style={styles.inputView}>
-                <TextInput
-                    style={styles.TextInput}
-                    placeholder="Host Numarası"
-                    placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
-                />
-            </View>
-            <View style={styles.inputView}>
-                <TextInput
-                    style={styles.TextInput}
-                    placeholder="Port Numarası"
-                    placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
-                />
-            </View>
-            <View style={styles.inputView}>
-                <TextInput
-                    style={styles.TextInput}
-                    placeholder="SQL Şifresi"
-                    placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
-                />
-            </View>
+
+                <TouchableOpacity style={styles.buttonView}>
+                    <Text style={styles.loginText}>Kayıt Ol</Text>
+                </TouchableOpacity>
+          
+            
 
 
             <TouchableOpacity style={styles.kayitBtn}>
@@ -83,7 +65,7 @@ const styles = StyleSheet.create({
         marginBottom: 0,
     },
 
-    inputView: {
+    buttonView: {
         backgroundColor: "#fff",
         borderRadius: 15,
         borderWidth: 1.,

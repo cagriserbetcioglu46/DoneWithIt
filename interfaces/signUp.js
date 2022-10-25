@@ -64,8 +64,8 @@ export default function App() {
             </View>
 
 
-            <TouchableOpacity style={styles.kayitBtn}>
-                <Text style={styles.loginText}>Kayıt Ol</Text>
+            <TouchableOpacity style={styles.signBtn}>
+                <Text style={styles.signUpText}>Kayıt Ol</Text>
             </TouchableOpacity>
         </View>
     );
@@ -99,7 +99,6 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.58,
         shadowRadius: 16.00,
-
         elevation: 24,
     },
 
@@ -110,15 +109,25 @@ const styles = StyleSheet.create({
         padding: 10,
     },
 
-
-    signUp_button: {
-        height: 30,
-        marginBottom: 10,
-        fontSize: 16,
-        color: "#a5240b",
+    signBtn: {
+        width: "40%",
+        borderRadius: 15,
+        height: 50,
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 5,
+        backgroundColor: "#006400",
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+        elevation: 24,
     },
 
-    loginText: {
+    signUpText: {
         color: "#fff",
         fontWeight: "bold",
         fontSize: 20,
