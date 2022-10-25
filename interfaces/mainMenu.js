@@ -17,38 +17,24 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-            <Image style={styles.image} source={require("../images/prosetlogo328-128.png")} />
-
-            <StatusBar style="auto" />
-            <View style={styles.buttonView}>
-                <TextInput
-                    style={styles.TextInput}
-                    placeholder="Kullanıcı Adı"
-                    placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
-                />
+            <View style={styles.logo}>
+                <Image style={styles.image} source={require("../images/logo_300x82.jpg")} />
             </View>
-
-            <View style={styles.buttonView}>
-                <TextInput
-                    style={styles.TextInput}
-                    placeholder="Şifre"
-                    placeholderTextColor="#003f5c"
-                    secureTextEntry={true}
-                    onChangeText={(password) => setPassword(password)}
-                />
-            </View>
-
-                <TouchableOpacity style={styles.buttonView}>
-                    <Text style={styles.loginText}>Kayıt Ol</Text>
-                </TouchableOpacity>
-          
             
-
-
-            <TouchableOpacity style={styles.kayitBtn}>
-                <Text style={styles.loginText}>Kayıt Ol</Text>
+            <StatusBar style="auto" />
+           
+            <TouchableOpacity style={styles.menuBtn}>
+                <Text style={styles.buttonText}>CARİ</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.menuBtn}>
+                <Text style={styles.buttonText}>STOK</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.menuBtn}>
+                <Text style={styles.buttonText}>KASA</Text>
+            </TouchableOpacity>
+
         </View>
     );
 }
@@ -57,23 +43,35 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#FCE9D8",
+        justifyContent:"center",
+        backgroundColor: "#FFCEA0",
+    },
+
+    logo: {
+        position: "absolute",
+        top: 0,
+        marginTop: 0,
+        width:300,
+        height:110,
+        backgroundColor:"#FCE9D8",
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
     },
 
     image: {
-        marginBottom: 0,
+        marginTop:28,
+        borderBottomLeftRadius:20,
+        borderBottomRightRadius:20,
     },
 
-    buttonView: {
-        backgroundColor: "#fff",
-        borderRadius: 15,
-        borderWidth: 1.,
-        borderColor: "#000",
-        width: "70%",
-        height: 45,
-        marginBottom: 20,
+    menuBtn: {
+        width: "40%",
+        borderRadius: 5,
+        height: 100,
         alignItems: "center",
+        justifyContent: "center",
+        marginTop: 25,
+        backgroundColor: "#e57700",
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -81,29 +79,13 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.58,
         shadowRadius: 16.00,
-
         elevation: 24,
     },
 
-    TextInput: {
-        height: 50,
-        flex: 1,
-        textAlign: "center",
-        padding: 10,
-    },
-
-
-    signUp_button: {
-        height: 30,
-        marginBottom: 10,
-        fontSize: 16,
-        color: "#a5240b",
-    },
-
-    loginText: {
+    buttonText: {
         color: "#fff",
         fontWeight: "bold",
-        fontSize: 20,
+        fontSize: 30,
     },
 
 });
