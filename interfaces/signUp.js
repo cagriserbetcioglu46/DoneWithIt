@@ -25,7 +25,6 @@ export default function App() {
                     style={styles.TextInput}
                     placeholder="Kullanıcı Adı"
                     placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
                 />
             </View>
 
@@ -42,16 +41,16 @@ export default function App() {
                 <TextInput
                     style={styles.TextInput}
                     placeholder="Host Numarası"
+                    keyboardType='numeric'
                     placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
                 />
             </View>
             <View style={styles.inputView}>
                 <TextInput
                     style={styles.TextInput}
                     placeholder="Port Numarası"
+                    keyboardType='numeric'
                     placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
                 />
             </View>
             <View style={styles.inputView}>
@@ -59,7 +58,6 @@ export default function App() {
                     style={styles.TextInput}
                     placeholder="SQL Şifresi"
                     placeholderTextColor="#003f5c"
-                    onChangeText={(email) => setEmail(email)}
                 />
             </View>
 
