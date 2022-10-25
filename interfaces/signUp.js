@@ -25,6 +25,7 @@ export default function App() {
                     style={styles.TextInput}
                     placeholder="Kullanıcı Adı"
                     placeholderTextColor="#003f5c"
+                    maxLength={10}
                 />
             </View>
 
@@ -34,6 +35,7 @@ export default function App() {
                     placeholder="Şifre"
                     placeholderTextColor="#003f5c"
                     secureTextEntry={true}
+                    maxLength={16}
                     onChangeText={(password) => setPassword(password)}
                 />
             </View>  
@@ -43,6 +45,7 @@ export default function App() {
                     placeholder="Host Numarası"
                     keyboardType='numeric'
                     placeholderTextColor="#003f5c"
+                    maxLength={15}
                 />
             </View>
             <View style={styles.inputView}>
@@ -51,6 +54,7 @@ export default function App() {
                     placeholder="Port Numarası"
                     keyboardType='numeric'
                     placeholderTextColor="#003f5c"
+                    maxLength={5}
                 />
             </View>
             <View style={styles.inputView}>
@@ -58,6 +62,7 @@ export default function App() {
                     style={styles.TextInput}
                     placeholder="SQL Şifresi"
                     placeholderTextColor="#003f5c"
+                    maxLength={16}
                 />
             </View>
 
