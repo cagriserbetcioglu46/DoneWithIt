@@ -56,6 +56,14 @@ const styles = StyleSheet.create({
         backgroundColor:"#FCE9D8",
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 12,
+        },
+        shadowOpacity: 0.88,
+        shadowRadius: 16.00,
+        elevation: 24,
     },
 
     image: {
