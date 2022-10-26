@@ -17,13 +17,13 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-        
+
             <View style={styles.logo}>
                 <Image style={styles.image} source={require("../images/logo_300x82.jpg")} />
             </View>
-            
+
             <StatusBar style="auto" />
-               
+
             <TouchableOpacity style={styles.menuBtn}>
                 <Text style={styles.buttonText}>CARİ</Text>
             </TouchableOpacity>
@@ -44,18 +44,17 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
-        justifyContent:"center",
+        justifyContent: "center",
         backgroundColor: "#FFCEA0",
-        paddingTop: 50,
     },
 
     logo: {
         position: "absolute",
         top: 0,
         marginTop: 0,
-        width:300,
-        height:110,
-        backgroundColor:"#FCE9D8",
+        width: 300,
+        height: 110,
+        backgroundColor: "#FCE9D8",
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
         shadowColor: "#000",
@@ -69,9 +68,9 @@ const styles = StyleSheet.create({
     },
 
     image: {
-        marginTop:28,
-        borderBottomLeftRadius:20,
-        borderBottomRightRadius:20,
+        marginTop: 28,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
     },
 
     menuBtn: {
