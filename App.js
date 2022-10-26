@@ -1,16 +1,10 @@
-import React from "react"
-import { StyleSheet, Image, Text, View, ImageBackground } from "react-native"
-//import Entry1 from "./interfaces/entry"
-//import Login1 from "./interfaces/login"
-import SignUp1 from "./interfaces/signUp"
-import MainMenu1 from "./interfaces/mainMenu"
-import Cari1 from "./interfaces/cari"
+const express = require('express');
+const app = express();
 
+app.get('/', (req,res) =>{
+    res.send('hello API!');
+})
 
-export default function Frame1() {
-  
-  return <MainMenu1 />
-  
-}
-
- 
+app.listen(3000, ()=>{
+    console.log('server is running http://localhost:3000')
+})
